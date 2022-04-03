@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manage_money.money_tracker.AddMovimentActivity" >
+
+    <TextView
+        android:id="@+id/observAddMovement"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/observacionsAddMoviment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classifAddMovement" />
+
+    <TextView
+        android:id="@+id/dateAddMovement"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/dataAddMoviment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quatityAddMovement" />
+
+    <TextView
+        android:id="@+id/classifAddMovement"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/classifAddMoviment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateAddMovement" />
+
+    <TextView
+        android:id="@+id/quatityAddMovement"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/quantitatAddMoviment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/titleAddMovement"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/titol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typeAddMovement"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tipus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleAddMovement" />
+
+    <EditText
+        android:id="@+id/titleInputAddMovement"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/titleAddMovement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleAddMovement" />
+
+    <EditText
+        android:id="@+id/classifInputAddMovement"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="createClassificationPickerDialog"
+        app:layout_constraintBaseline_toBaselineOf="@+id/classifAddMovement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/classifAddMovement" />
+
+    <EditText
+        android:id="@+id/quantityInputAddMovement"
+        android:layout_width="173dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/quatityAddMovement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleAddMovement" />
+
+    <EditText
+        android:id="@+id/observInputAddMovement"
+        android:layout_width="307dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observAddMovement" />
+
+    <EditText
+        android:id="@+id/dateInputAddMovement"
+        android:layout_width="173dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="dd/mm/yyyy"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dateAddMovement"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/saveAddMovement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:onClick="addMovement"
+        android:text="@string/guardarAddMoviment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observInputAddMovement"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <Button
+        android:id="@+id/saveAddMovement2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cancelar"
+        android:text="@string/cancela"
+        app:layout_constraintBaseline_toBaselineOf="@+id/saveAddMovement"
+        app:layout_constraintEnd_toStartOf="@+id/saveAddMovement"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="197dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toEndOf="@+id/typeAddMovement"
+        app:layout_constraintTop_toBottomOf="@+id/titleInputAddMovement">
+
+        <RadioButton
+            android:id="@+id/outcomeInputAddMovement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/tipusDespesa" />
+
+        <RadioButton
+            android:id="@+id/incomeInputAddMovement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/tipusIngres" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

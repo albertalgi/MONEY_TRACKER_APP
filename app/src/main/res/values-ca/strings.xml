@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestor de diners</string>
+    <string name="text_1">RESUM</string>
+    <string name="BTN_1">+</string>
+    <string name="tipus">Tipus</string>
+    <string name="tipusIngres">Ingres</string>
+    <string name="tipusDespesa">Despesa</string>
+    <string name="titol">Títol</string>
+    <string name="quantitatAddMoviment">Quantitat</string>
+    <string name="dataAddMoviment">Data</string>
+    <string name="observacionsAddMoviment">Observacions</string>
+    <string name="guardarAddMoviment">GUARDAR</string>
+    <string name="classifAddMoviment">Classificació</string>
+    <string name="cancela">Cancelar</string>
+    <string name="billClass">Factures</string>
+    <string name="varisClass">Altres</string>
+    <string name="compraClass">Supermercat</string>
+    <string name="esportClass">Esport</string>
+    <string name="transferClass">Transferència</string>
+    <string name="transportClass">Transport</string>
+    <string name="houseRent">Lloguer</string>
+    <string name="presentsClass">Regal</string>
+    <string name="gasClass">Combustible</string>
+    <string name="mainOutcome">DESPESES</string>
+    <string name="mainIncome">INGRESSOS</string>
+    <string name="AddMovementValidator">No pot ser buit</string>
+    <string name="AddMovementValidatorRadioButton">Sel·lecciona "Despesa" o "Ingrés"</string>
+    <string name="menuInterval">Interval</string>
+    <string name="menuDivisa">Divisa</string>
+    <string name="report_title">Informe</string>
+    <string name="create_report">COMENÇA UN INFORME</string>
+    <string name="week_report">Informe setmanal</string>
+    <string name="mont_report">Informe mensual</string>
+    <string name="no_expenses">No hi ha despeses</string>
+    <string name="no_income">No hi ha ingressos</string>
+    <string name="emptyPicText">No s\'ha trobat cap imatge per aquesta transacció</string>
+    <string name="mesDe">Mes</string>
+    <string name="showReportsActivityTitle">INFORMES MENSUALS</string>
+    <string name="showMovimentPicTitle">FOTO DE LA TRANSACCIÓ</string>
+    <string name="addEdit">CREA/EDITA</string>
+    <string name="addEditToast">Transacció modificada</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manage_money.money_tracker.ShowReportsActivity">
+
+    <Button
+        android:id="@+id/startReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createReport"
+        android:text="@string/create_report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/reportsGridView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reportsGridView" />
+
+    <GridView
+        android:id="@+id/reportsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp" >
+
+    </GridView>
+</androidx.constraintlayout.widget.ConstraintLayout>

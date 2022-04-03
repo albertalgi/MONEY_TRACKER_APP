@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Money Manager</string>
+    <string name="text_1">SUMMARY</string>
+    <string name="BTN_1">+</string>
+    <string name="tipus">Type</string>
+    <string name="tipusIngres">Income</string>
+    <string name="tipusDespesa">Expense</string>
+    <string name="titol">Title</string>
+    <string name="quantitatAddMoviment">Quantity</string>
+    <string name="dataAddMoviment">Date</string>
+    <string name="observacionsAddMoviment">Notes</string>
+    <string name="guardarAddMoviment">SAVE</string>
+    <string name="classifAddMoviment">Classification</string>
+    <string name="cancela">Cancel</string>
+    <string name="billClass">Bills</string>
+    <string name="varisClass">Others</string>
+    <string name="compraClass">Groceries</string>
+    <string name="esportClass">Sport</string>
+    <string name="transferClass">Transfers</string>
+    <string name="transportClass">Transport</string>
+    <string name="houseRent">Rent</string>
+    <string name="presentsClass">Gift</string>
+    <string name="gasClass">Gas</string>
+    <string name="mainOutcome">EXPENSES</string>
+    <string name="mainIncome">INCOMES</string>
+    <string name="AddMovementValidator">Can\'t be empty</string>
+    <string name="AddMovementValidatorRadioButton">Select "Expense" or "Income"</string>
+    <string name="menuInterval">Interval</string>
+    <string name="menuDivisa">Currency</string>
+    <string name="report_title">Report</string>
+    <string name="create_report">CREATE A REPORT</string>
+    <string name="week_report">Weekly report</string>
+    <string name="mont_report">Monthly report</string>
+    <string name="no_expenses">No expenses found</string>
+    <string name="no_income">No incomes found</string>
+    <string name="emptyPicText">No picture found for this transaction</string>
+    <string name="mesDe"></string>
+    <string name="showReportsActivityTitle">MONTHLY REPORTS</string>
+    <string name="showMovimentPicTitle">TRANSACTION PICTURE</string>
+    <string name="addEdit">ADD/EDIT</string>
+    <string name="addEditToast">Transaction updated</string>
+
+</resources>

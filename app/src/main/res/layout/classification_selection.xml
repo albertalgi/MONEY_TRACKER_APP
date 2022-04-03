@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:useDefaultMargins="true">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/facturesClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/invoice_receipt" />
+
+            <TextView
+                android:id="@+id/facturesClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/billClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/transportClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/bus_symbol" />
+
+            <TextView
+                android:id="@+id/transportClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/transportClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rentClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/mortgage" />
+
+            <TextView
+                android:id="@+id/rentClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/houseRent"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/groceriesClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/shopping" />
+
+            <TextView
+                android:id="@+id/groceriesClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/compraClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/sportClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/sport" />
+
+            <TextView
+                android:id="@+id/sportClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/esportClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_column="2"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/presentClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/christmas_present" />
+
+            <TextView
+                android:id="@+id/presentClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/presentsClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/gasClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/gas_pump" />
+
+            <TextView
+                android:id="@+id/gasClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/gasClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/transferClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/nomina" />
+
+            <TextView
+                android:id="@+id/transferClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/transferClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_column="2"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/othersClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClassificationClicked"
+                app:srcCompat="@mipmap/varis_class" />
+
+            <TextView
+                android:id="@+id/thersClassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/varisClass"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

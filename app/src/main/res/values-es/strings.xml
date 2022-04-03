@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestor de dinero</string>
+    <string name="text_1">RESUMEN</string>
+    <string name="BTN_1">+</string>
+    <string name="tipus">Tipo</string>
+    <string name="tipusIngres">Ingreso</string>
+    <string name="tipusDespesa">Gasto</string>
+    <string name="titol">Título</string>
+    <string name="quantitatAddMoviment">Cantidad</string>
+    <string name="dataAddMoviment">Fecha</string>
+    <string name="observacionsAddMoviment">Observaciones</string>
+    <string name="guardarAddMoviment">GUARDAR</string>
+    <string name="classifAddMoviment">Classificación</string>
+    <string name="cancela">Cancelar</string>
+    <string name="billClass">Facturas</string>
+    <string name="varisClass">Otros</string>
+    <string name="compraClass">Supermercado</string>
+    <string name="esportClass">Deporte</string>
+    <string name="transferClass">Transferencia</string>
+    <string name="transportClass">Transporte</string>
+    <string name="houseRent">Alquiler</string>
+    <string name="presentsClass">Regalo</string>
+    <string name="gasClass">Combustible</string>
+    <string name="mainOutcome">GASTOS</string>
+    <string name="mainIncome">INGRESOS</string>
+    <string name="AddMovementValidator">No puede ser vacío</string>
+    <string name="AddMovementValidatorRadioButton">Selecciona "Gasto" o "Ingreso"</string>
+    <string name="menuInterval">Interval</string>
+    <string name="menuDivisa">Divisa</string>
+    <string name="report_title">Informe</string>
+    <string name="create_report">CREA UN INFORME</string>
+    <string name="week_report">Informe semanal</string>
+    <string name="mont_report">Informe mensual</string>
+    <string name="no_expenses">No hay gastos</string>
+    <string name="no_income">No hay ingresos</string>
+    <string name="emptyPicText">No se ha encontrado ninguna imagen para esta transacción</string>
+    <string name="mesDe"></string>
+    <string name="showReportsActivityTitle">INFORMES MENSUALES</string>
+    <string name="showMovimentPicTitle">FOTO DE LA TRANSACCIÓN</string>
+    <string name="addEdit">CREA/EDITA</string>
+    <string name="addEditToast">Transacción modificada</string>
+</resources>
