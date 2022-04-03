@@ -1,6 +1,7 @@
 package com.manage_money.money_tracker;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -36,6 +38,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Currency;
 import java.util.Date;
 import java.util.List;
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     //TODO date format for SQLite is "yyyy-MM-dd". Change in the future for dd/MM/yyyy
     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+    SimpleDateFormat actionBarFormatter = new SimpleDateFormat("dd MMM");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,13 +106,6 @@ public class MainActivity extends AppCompatActivity {
         setUpListView(TipusMoviment.DESPESA);
         setupPieChart();
         loadChartData(TipusMoviment.DESPESA);
-
-        /*
-        TimerUtils timerUtils = TimerUtils.getInstance(this);
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-        Toast toast = Toast.makeText(this, formatter.format(timerUtils.getLastDayOfCurrentMonth()), Toast.LENGTH_LONG);
-        toast.show();
-*/
     }
 
     @Override
@@ -149,15 +146,31 @@ public class MainActivity extends AppCompatActivity {
                 refreshActivityData(TipusMoviment.DESPESA);
                 break;
             case R.id.weeklyInterval:
-                initReportDate = formatter.format(TimerUtils.getFirstDayOfCurrentWeek());
-                endReportDate = formatter.format(TimerUtils.getLastDayOfCurrentWeek());
+                DatePickerDialog picker = new DatePickerDialog(
+                        MainActivity.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                                monthOfYear = monthOfYear +1;
+                                Date init = TimerUtils.getFirstDayOfWeekSpecifiedDate(year,monthOfYear,dayOfMonth);
+                                Date end = TimerUtils.getLastDayOfWeekSpecifiedDate(year,monthOfYear,dayOfMonth);
+                                initReportDate = formatter.format(init);
+                                endReportDate = formatter.format(end);
 
-                //Set actionban title
+                                //Set actionbar title
+                                //String week = getResources().getString(R.string.week_report);
+                                String week = actionBarFormatter.format((init)) + " - " + actionBarFormatter.format(end);
+                                getSupportActionBar().setTitle(week);
 
-                String week = getResources().getString(R.string.week_report);
-                getSupportActionBar().setTitle(week);
-                refreshActivityData(TipusMoviment.INGRES);
-                refreshActivityData(TipusMoviment.DESPESA);
+                                //Refresh data
+                                refreshActivityData(TipusMoviment.INGRES);
+                                refreshActivityData(TipusMoviment.DESPESA);
+                            }
+                        },
+                        Calendar.getInstance().get(Calendar.YEAR),
+                        Calendar.getInstance().get(Calendar.MONTH),
+                        Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+                picker.show();
                 break;
 
         }

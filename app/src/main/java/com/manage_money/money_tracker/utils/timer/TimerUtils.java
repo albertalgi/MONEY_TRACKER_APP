@@ -78,6 +78,22 @@ public class TimerUtils {
         db.reportsDao().insertReport(report);
     }
 
+    public static Date getLastDayOfWeekSpecifiedDate(int year, int month, int day) {
+        Calendar c = Calendar.getInstance();
+        c.set(year, month-1, day);
+        c.setTime(c.getTime()); // Date type
+        c.set(Calendar.DAY_OF_WEEK,Calendar.SUNDAY);
+        return c.getTime();
+    }
+
+    public static Date getFirstDayOfWeekSpecifiedDate(int year, int month, int day) {
+        Calendar c = Calendar.getInstance();
+        c.set(year, month-1, day);
+        c.setTime(c.getTime()); // Date type
+        c.set(Calendar.DAY_OF_WEEK,Calendar.MONDAY);
+        return c.getTime();
+    }
+
     public boolean isMonthlyReportCreated(String initDate) {
         List<Report> reports = db.reportsDao().getReportsByDate(initDate);
         if(reports.size() > 0) {
