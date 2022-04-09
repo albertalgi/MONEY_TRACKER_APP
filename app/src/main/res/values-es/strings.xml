@@ -56,5 +56,6 @@
     <string name="select_year">Selecciona un año</string>
     <string name="createReportButton">Año no válido</string>
     <string name="yearError">Año no válido</string>
+    <string name="monthError">Selecciona un mes</string>
 
 </resources>

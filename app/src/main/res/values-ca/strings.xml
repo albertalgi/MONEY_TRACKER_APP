@@ -56,5 +56,6 @@
     <string name="select_year">Sel·lecciona un any</string>
     <string name="createReportButton">CREAR</string>
     <string name="yearError">Any no vàlid</string>
+    <string name="monthError">Sel·lecciona un mes</string>
 
 </resources>

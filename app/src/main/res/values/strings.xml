@@ -55,5 +55,6 @@
     <string name="select_year">Select a year</string>
     <string name="createReportButton">CREATE</string>
     <string name="yearError">Invalid year format</string>
+    <string name="monthError">You must select a month</string>
 
 </resources>

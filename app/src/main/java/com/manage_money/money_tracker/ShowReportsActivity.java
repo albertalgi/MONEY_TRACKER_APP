@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.manage_money.money_tracker.R;
 import com.manage_money.money_tracker.database.database.AppDatabase;
@@ -206,16 +207,28 @@ public class ShowReportsActivity extends AppCompatActivity {
         EditText year = (EditText) dialog.findViewById(R.id.year_createreport);
         String inputYear = year.getText().toString();
 
-        if (inputYear == "" || !(inputYear.matches("^[0-9]{4}$"))) {
-            year.setError(getResources().getString(R.string.yearError));
+        if (inputYear == "" || !(inputYear.matches("^[0-9]{4}$")) || month == 0) {
+            if (!(inputYear.matches("^[0-9]{4}$"))) {
+                year.setError(getResources().getString(R.string.yearError));
+            }
+
+            if (month == 0) {
+                Toast toast = Toast.makeText(this, getResources().getText(R.string.monthError), Toast.LENGTH_LONG);
+                toast.show();
+            }
         } else {
             //If all correct, create the report and dismiss dialog
             Report report = new Report("REPORT",formatter.format(TimerUtils.getFirstDayOfSpecifiedMonthAndYear(month,Integer.parseInt(inputYear))), formatter.format(TimerUtils.getLastDayOfSpecifiedMonthAndYear(month,Integer.parseInt(inputYear))));
             db.reportsDao().insertReport(report);
+            month = 0;
             dialog.dismiss();
             finish();
             startActivity(getIntent());
         }
+    }
+
+    public void cancelManualReportCreation(View v) {
+        dialog.dismiss();
     }
 
     public void createReport(View view) {
