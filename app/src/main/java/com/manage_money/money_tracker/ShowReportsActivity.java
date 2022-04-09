@@ -217,13 +217,21 @@ public class ShowReportsActivity extends AppCompatActivity {
                 toast.show();
             }
         } else {
-            //If all correct, create the report and dismiss dialog
-            Report report = new Report("REPORT",formatter.format(TimerUtils.getFirstDayOfSpecifiedMonthAndYear(month,Integer.parseInt(inputYear))), formatter.format(TimerUtils.getLastDayOfSpecifiedMonthAndYear(month,Integer.parseInt(inputYear))));
-            db.reportsDao().insertReport(report);
-            month = 0;
-            dialog.dismiss();
-            finish();
-            startActivity(getIntent());
+            //Update the current month list
+            getMonthsArray();
+
+            if (this.initDates.contains(formatter.format(TimerUtils.getFirstDayOfSpecifiedMonthAndYear(month,Integer.parseInt(inputYear))))) {
+                Toast toast = Toast.makeText(this, getResources().getText(R.string.reportAlreadyCreated), Toast.LENGTH_LONG);
+                toast.show();
+            } else {
+                //If all correct, create the report and dismiss dialog
+                Report report = new Report("REPORT", formatter.format(TimerUtils.getFirstDayOfSpecifiedMonthAndYear(month, Integer.parseInt(inputYear))), formatter.format(TimerUtils.getLastDayOfSpecifiedMonthAndYear(month, Integer.parseInt(inputYear))));
+                db.reportsDao().insertReport(report);
+                month = 0;
+                dialog.dismiss();
+                finish();
+                startActivity(getIntent());
+            }
         }
     }
 

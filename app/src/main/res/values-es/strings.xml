@@ -57,5 +57,6 @@
     <string name="createReportButton">Año no válido</string>
     <string name="yearError">Año no válido</string>
     <string name="monthError">Selecciona un mes</string>
+    <string name="reportAlreadyCreated">El informe del mes y año seleccionados ya existe!</string>
 
 </resources>

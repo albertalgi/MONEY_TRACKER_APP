@@ -56,5 +56,6 @@
     <string name="createReportButton">CREATE</string>
     <string name="yearError">Invalid year format</string>
     <string name="monthError">You must select a month</string>
+    <string name="reportAlreadyCreated">Report with this date is already created</string>
 
 </resources>

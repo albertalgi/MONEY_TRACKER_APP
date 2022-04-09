@@ -57,5 +57,6 @@
     <string name="createReportButton">CREAR</string>
     <string name="yearError">Any no vàlid</string>
     <string name="monthError">Sel·lecciona un mes</string>
+    <string name="reportAlreadyCreated">L\'informe del mes i any sel·leccionats ja existeix!</string>
 
 </resources>
