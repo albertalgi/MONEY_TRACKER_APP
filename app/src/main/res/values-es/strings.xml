@@ -40,4 +40,23 @@
     <string name="showMovimentPicTitle">FOTO DE LA TRANSACCIÓN</string>
     <string name="addEdit">CREA/EDITA</string>
     <string name="addEditToast">Transacción modificada</string>
+    <string name="createReportTitle">Selecciona el año y el mes</string>
+    <string name="jan">ENE</string>
+    <string name="feb">FEB</string>
+    <string name="mar">MAR</string>
+    <string name="apr">ABR</string>
+    <string name="may">MAYO</string>
+    <string name="jun">JUN</string>
+    <string name="aug">AGO</string>
+    <string name="sep">SEP</string>
+    <string name="oct">OCT</string>
+    <string name="nov">NOV</string>
+    <string name="dec">DIC</string>
+    <string name="jul">JUL</string>
+    <string name="select_year">Selecciona un año</string>
+    <string name="createReportButton">Año no válido</string>
+    <string name="yearError">Año no válido</string>
+    <string name="monthError">Selecciona un mes</string>
+    <string name="reportAlreadyCreated">El informe del mes y año seleccionados ya existe!</string>
+
 </resources>

@@ -40,4 +40,23 @@
     <string name="showMovimentPicTitle">FOTO DE LA TRANSACCIÓ</string>
     <string name="addEdit">CREA/EDITA</string>
     <string name="addEditToast">Transacció modificada</string>
+    <string name="createReportTitle">Sel·lecciona l\'any i el mes</string>
+    <string name="jan">GEN</string>
+    <string name="feb">FEB</string>
+    <string name="mar">MAR</string>
+    <string name="apr">ABR</string>
+    <string name="may">MAIG</string>
+    <string name="jun">JUN</string>
+    <string name="aug">AGO</string>
+    <string name="sep">SET</string>
+    <string name="oct">OCT</string>
+    <string name="nov">NOV</string>
+    <string name="dec">DES</string>
+    <string name="jul">JUL</string>
+    <string name="select_year">Sel·lecciona un any</string>
+    <string name="createReportButton">CREAR</string>
+    <string name="yearError">Any no vàlid</string>
+    <string name="monthError">Sel·lecciona un mes</string>
+    <string name="reportAlreadyCreated">L\'informe del mes i any sel·leccionats ja existeix!</string>
+
 </resources>

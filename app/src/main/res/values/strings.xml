@@ -39,5 +39,23 @@
     <string name="showMovimentPicTitle">TRANSACTION PICTURE</string>
     <string name="addEdit">ADD/EDIT</string>
     <string name="addEditToast">Transaction updated</string>
+    <string name="createReportTitle">Select a year and a month</string>
+    <string name="jan">JAN</string>
+    <string name="feb">FEB</string>
+    <string name="mar">MAR</string>
+    <string name="apr">APR</string>
+    <string name="may">MAY</string>
+    <string name="jun">JUN</string>
+    <string name="aug">AUG</string>
+    <string name="sep">SEP</string>
+    <string name="oct">OCT</string>
+    <string name="nov">NOV</string>
+    <string name="dec">DEC</string>
+    <string name="jul">JUL</string>
+    <string name="select_year">Select a year</string>
+    <string name="createReportButton">CREATE</string>
+    <string name="yearError">Invalid year format</string>
+    <string name="monthError">You must select a month</string>
+    <string name="reportAlreadyCreated">Report with this date is already created</string>
 
 </resources>

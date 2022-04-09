@@ -12,7 +12,7 @@ import java.util.List;
 
 @Dao
 public interface ReportsDao {
-    @Query("SELECT * FROM reports")
+    @Query("SELECT * FROM reports ORDER BY initData")
     List<Report> getAllReports();
 
     @Query("SELECT * FROM reports WHERE id =:reportId")

@@ -94,6 +94,24 @@ public class TimerUtils {
         return c.getTime();
     }
 
+    public static Date getFirstDayOfSpecifiedMonthAndYear(int month, int year) {
+        Calendar c = Calendar.getInstance();
+        c.set(year, month-1, 1);
+        c.setTime(c.getTime());
+        c.set(Calendar.DAY_OF_MONTH,1);
+        Log.i("FIRST DAY", c.getTime().toString());
+        return c.getTime();
+    }
+
+    public static Date getLastDayOfSpecifiedMonthAndYear(int month, int year) {
+        Calendar c = Calendar.getInstance();
+        c.set(year, month-1, 1);
+        c.setTime(c.getTime());
+        c.set(Calendar.DAY_OF_MONTH, c.getActualMaximum(Calendar.DATE));
+        Log.i("LAST DAY", c.getTime().toString());
+        return c.getTime();
+    }
+
     public boolean isMonthlyReportCreated(String initDate) {
         List<Report> reports = db.reportsDao().getReportsByDate(initDate);
         if(reports.size() > 0) {
