@@ -7,13 +7,12 @@
 
     <TextView
         android:id="@+id/create_report_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/createReportTitle"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,20 +20,22 @@
         android:id="@+id/select_year_createreport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:text="@string/select_year"
+        app:layout_constraintEnd_toStartOf="@+id/year_createreport"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create_report_title" />
 
     <EditText
         android:id="@+id/year_createreport"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="28dp"
+        android:layout_width="98dp"
+        android:layout_height="60dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBaseline_toBaselineOf="@+id/select_year_createreport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/select_year_createreport"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -48,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create_report_title"
-        app:layout_constraintVertical_bias="0.159">
+        app:layout_constraintVertical_bias="0.447">
 
         <TextView
             android:id="@+id/january"

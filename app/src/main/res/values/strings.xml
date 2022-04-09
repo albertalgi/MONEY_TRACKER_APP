@@ -39,7 +39,7 @@
     <string name="showMovimentPicTitle">TRANSACTION PICTURE</string>
     <string name="addEdit">ADD/EDIT</string>
     <string name="addEditToast">Transaction updated</string>
-    <string name="createReportTitle">Select a year and a month for the report</string>
+    <string name="createReportTitle">Select a year and a month</string>
     <string name="jan">JAN</string>
     <string name="feb">FEB</string>
     <string name="mar">MAR</string>
