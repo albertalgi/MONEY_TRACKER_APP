@@ -24,6 +24,9 @@
             <item
                 android:id="@+id/weeklyInterval"
                 android:title="@string/week_report" />
+            <item
+                android:id="@+id/customInterval"
+                android:title="@string/custom_report" />
         </menu>
     </item>
 </menu>

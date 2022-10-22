@@ -32,6 +32,7 @@
     <string name="create_report">CREA UN INFORME</string>
     <string name="week_report">Informe semanal</string>
     <string name="mont_report">Informe mensual</string>
+    <string name="custom_report">Escoge intervalo</string>
     <string name="no_expenses">No hay gastos</string>
     <string name="no_income">No hay ingresos</string>
     <string name="emptyPicText">No se ha encontrado ninguna imagen para esta transacción</string>

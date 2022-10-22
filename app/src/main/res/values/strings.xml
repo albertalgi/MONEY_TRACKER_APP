@@ -31,6 +31,7 @@
     <string name="create_report">CREATE A REPORT</string>
     <string name="week_report">Weekly report</string>
     <string name="mont_report">Monthly report</string>
+    <string name="custom_report">Choose interval</string>
     <string name="no_expenses">No expenses found</string>
     <string name="no_income">No incomes found</string>
     <string name="emptyPicText">No picture found for this transaction</string>
