@@ -172,7 +172,9 @@ public class MainActivity extends AppCompatActivity {
                         Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
                 picker.show();
                 break;
-
+            case R.id.customInterval:
+                createCustomIntervalDialog();
+                break;
         }
         return true;
     }
@@ -403,6 +405,15 @@ public class MainActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
+    }
+
+    public void createCustomIntervalDialog() {
+        dialogBuilder = new AlertDialog.Builder(this);
+        final View customIntervalPickerPopupView = getLayoutInflater().inflate(R.layout.custom_interval_dialog, null);
+
+        dialogBuilder.setView(customIntervalPickerPopupView);
+        dialog = dialogBuilder.create();
+        dialog.show();
     }
 
     public void refreshActivityData(TipusMoviment tm) {
